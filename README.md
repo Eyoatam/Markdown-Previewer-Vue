@@ -1,6 +1,6 @@
 # markdown-previewer
 
-![](https://github.com/Eyoatam)
+![](https://github.com/Eyoatam/Markdown-Previewer-Vue/assets/Screen Shot 2020-09-04 at 12.39.11 PM)
 
 ## Project setup
 
