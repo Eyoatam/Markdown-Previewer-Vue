@@ -1,6 +1,6 @@
 # markdown-previewer
 
-![](https://github.com/Eyoatam)
+<img src="github.com/Eyoatam/Markdown-Previewer-Vue/src/assets/page.png">
 
 ## Project setup
 
