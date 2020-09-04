@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <i-container class="container">
+    <i-container class="contain">
       <i-row>
         <i-column class="border-right" sm="6">
           <h1>Markdown</h1>
@@ -8,21 +8,12 @@
             v-model="value"
             class="form-control"
             id="exampleFormControlTextarea1"
-            rows="4"
+            rows="13"
             placeholder="Enter Some Markdown here..."
           ></textarea>
         </i-column>
-        <i-column sm="6">
-          <h1>Preview</h1>
-          <!-- <textarea
-            readonly
-            v-model="value"
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="4"
-            placeholder="Enter Some Markdown here..."
-          >
-          </textarea> -->
+        <i-column sm="6" class="preview">
+          <h1 id="pre">Preview</h1>
           <vue-markdown :style="styleObj" :source="value"></vue-markdown>
         </i-column>
       </i-row>
@@ -38,9 +29,10 @@ export default {
     return {
       value: "",
       styleObj: {
+        color: "#151515",
         fontsize: "1rem",
         width: "auto",
-        height: "500px",
+        height: "483px",
         backgroundColor: "#e9ecef",
         padding: "20px",
         borderRadius: "5px",
@@ -54,14 +46,28 @@ export default {
 </script>
 
 <style>
-.container {
+#body {
+  background-color: #151515;
+}
+.contain {
   margin-top: 40px;
 }
 .border-right {
-  border-color: #000 !important;
+  border-color: #bcc4ca !important;
   height: 600px;
 }
 .form-control {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.preview {
+  color: #151515;
+  font-size: 30px;
+}
+
+#pre {
+  color: #9e9e9e;
+}
+h1 {
+  color: #9e9e9e;
 }
 </style>
